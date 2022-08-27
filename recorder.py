@@ -4,7 +4,7 @@ import wavio as wv
 
 
 freq = 44100
-duration = 5
+duration = str(input("Digite o Tempo de Duração da Gravação\n>>"))
 recording = sd.rec(int(duration * freq), samplerate=freq, channels=2)
               
   
