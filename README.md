@@ -1,4 +1,4 @@
-# pyRECORDER v1.0.0
+# pyREC v1.0.0
 grava audio
 
 # Detalhes de Release:
