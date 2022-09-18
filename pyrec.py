@@ -22,7 +22,7 @@ class Color():
 
 
 def banner():
-    print(Color.Vermelho +
+    print(Color.VERMELHO +
 
         '''
                                     
