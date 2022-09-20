@@ -40,6 +40,10 @@ Copyright (c) 2022 Juan Carlos Bindez
 
     cd pyREC-v1.0.0/
     
+#### Instale os pacotes:
+
+    pip install -r requirements.txt
+    
 #### Agora é só rodar o software:
 
     python3 pyrec.py
