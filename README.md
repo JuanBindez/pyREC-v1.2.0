@@ -1,4 +1,4 @@
-# Este é o pyREC versão 1.3.0
+# Este é o pyREC versão 1.0.0
 
 Copyright (c) 2022 Juan Carlos Bindez
 
