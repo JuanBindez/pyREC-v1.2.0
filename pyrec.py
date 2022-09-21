@@ -31,7 +31,6 @@ from scipy.io.wavfile import write
 import wavio as wv
 import os
 import random
-import numpy as np
 import datetime
 
 
