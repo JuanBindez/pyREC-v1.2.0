@@ -32,6 +32,7 @@ import wavio as wv
 import os
 import random
 import numpy as np
+import datetime
 
 
 class Color():
@@ -78,7 +79,7 @@ duration = int(input(Color.VERMELHO + "Digite quantos segundos de gravação voc
 recording = sd.rec(int(duration * freq),  
                    samplerate=freq, channels=2)
 
-name_file = str(random.random())
+name_file = str(datetime.datetime.now())
 
 sd.wait()
 write("pyrec1_" + name_file, freq, recording) 
