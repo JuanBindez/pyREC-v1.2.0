@@ -1,4 +1,4 @@
-# Este é o pyREC versão 1.0.0
+# Este é o pyREC versão 1.2.0
 
 Copyright (c) 2022 Juan Carlos Bindez
 
@@ -9,6 +9,10 @@ Copyright (c) 2022 Juan Carlos Bindez
 ----------
 
 # Detalhes de Release:
+
+### v1.2.0:
+
+- adicionado recurso para gerar nomes de saida dos arquivos com data e hora
 
 ### v1.0.0:
 
