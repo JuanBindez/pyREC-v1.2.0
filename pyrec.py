@@ -25,10 +25,14 @@ Author: https://github.com/JuanBindez
 '''
 
 
+
 import sounddevice as sd 
 from scipy.io.wavfile import write 
 import wavio as wv
 import os
+import random
+import numpy as np
+
 
 class Color():
     VERDE = '\033[92m'
@@ -58,29 +62,14 @@ def banner():
         | '_ \| | | | |_) |  _|| |    
         | |_) | |_| |  _ <| |__| |___ 
         | .__/ \__, |_| \_\_____\____|
-        |_|    |___/                   v1.0.0
+        |_|    |___/                   v1.2.0
                                
         Copyright (c) 2022 Juan Carlos Bindez
 
          *[Ctrl + C] Para Sair do Programa
+
         '''
     + Color.RESET)
-
-
-def aguardo():
-    x = 0
-
-    while x < duration:
-        banner()
-        print("--")
-        os.system("clear")
-        banner()
-        print("|")
-        os.system("clear")
-        banner()
-        print("/")
-        os.system("clear")
-        x = x + 1
 
 
 banner()
@@ -88,12 +77,13 @@ freq = 44100
 duration = int(input(Color.VERMELHO + "Digite quantos segundos de gravação você quer >>" + Color.RESET))
 recording = sd.rec(int(duration * freq),  
                    samplerate=freq, channels=2)
-                 
+
+name_file = str(random.random())
+
 sd.wait()
-aguardo()
-write("recording0.wav", freq, recording) 
-wv.write("recording1.wav", recording, freq, sampwidth=2)
+write("pyrec1_" + name_file, freq, recording) 
+wv.write("pyrec2_" + name_file, recording, freq, sampwidth=2)
 
 os.system("clear")
-banner()
-print(Color.VERMELHO + "            GRAVAÇÃO CONCLUÍDA!" + Color.RESET)
+print(Color.VERDE + "            GRAVAÇÃO CONCLUÍDA!" + Color.RESET)
+print("Salvo com o nome: pyrec1_" + name_file + ".wav")
