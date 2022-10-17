@@ -81,8 +81,8 @@ recording = sd.rec(int(duration * freq),
 name_file = str(datetime.datetime.now())
 
 sd.wait()
-write("pyrec1_" + name_file, freq, recording) 
-wv.write("pyrec2_" + name_file, recording, freq, sampwidth=2)
+#write("pyrec1_" + name_file, freq, recording) 
+wv.write("pyrec_" + name_file, recording, freq, sampwidth=2)
 
 os.system("clear")
 print(Color.VERDE + "            GRAVAÇÃO CONCLUÍDA!" + Color.RESET)
