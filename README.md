@@ -32,6 +32,11 @@ Copyright (c) 2022 Juan Carlos Bindez
 ----------
 ### Como usar?
 
+#### in Ubuntu:
+
+    sudo apt-get install portaudio19-dev
+
+
 #### Instale o Git:
 
     sudo apt install git
